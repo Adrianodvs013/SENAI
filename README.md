@@ -20,9 +20,9 @@
         alert("Podemos fazer mais com JavaScript!");
     </script>
 
-     <button onclick="resultado()"> Clique aqui!</button>
+     <button onclick="resultado("Deu certo!")">Clique aqui!</button>
      <br>
-     
+
     <script>  //2.1 Dê olá ao mundo de outras formas
         alert("Olá, mundo!");
         alert("Este é o meu segundo programa!");
@@ -35,7 +35,7 @@
         alert(33 + 33);    // soma
         alert("Eu nasci em:");
         alert("1989 - 12");
-        alert("A soma das nossas odades é:");
+        alert("A soma das nossas idades é:");
         alert(28 + 30 + 33);
         alert("A média das nossas idades é:");
         alert((28 + 30 + 33) / 3);
@@ -59,8 +59,13 @@
             document.getElementById("deso").innerHTML = data;
         }
     </script>
-         
-   
+     
+    <div id="demo"></div><div>
+     <script>
+        var data = 1989;
+        alert("Data de Nascimento:" + data);
+     </script>
+    
+
 </body>
 </html>
-
