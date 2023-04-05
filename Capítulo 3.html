@@ -1,12 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Capitulo 03 - imc</title>
 </head>
 <body>
-    
+    <h2>Pratique resolvendo problemas do seu dia a dia</h2>
+     
+    <!--Ainda não foi definido nenhuma variável para os dados.-->
+    <var>
+        imc = peso / (altura * altura) 
+    </var> 
+      
+    <!-- Aqui definimos as varáveis para os dados.-->
+    <var> peso = 75;
+    <var> altura = 1.72;
+    <var> imc = peso / (altura * altura)
+     mostra("Meu IMC é:" + imc);   
+     
+     <!--Agora precisarmos calcular o IMC do primo.-->
+    <var> pesoDoPrimo = 83;
+    <var> alturaDoPrimo = 1.76;
+    <var> imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo)
+     mostra("O IMC do primo é:" + imc); 
+     
+     <!--Vamos criar uma função que seja responsável por calcular o IMC. Assim como a nossa função mostra, essa 
+    precisará receber parâmetros para poder calcular seu resultado.
+    Serão dois parâmetros, peso e altura, que também declararemos dentro dos parênteses, usando a vírgula como separadora:-->
+     <var>
+        calcularIMC = funcion(altura,peso){
+            var imc = / (altura * altura)
+            mostra ("IMC calculado é" + imc)
+        };
+     </var>
+
+     <!--Vamos revisar como deve estar o código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulaLinha:-->
+     <script>
+        var pulaLinha = function(){
+            document.write("<br>");
+        };
+
+        var mostra = function(frase){
+            document.write(frase);
+            pilaLinha();
+        };
+
+        //Agora teremos nossa função que, dados altura e peso, calcula o imc e o retorna:
+        var calcularIMC = function(altura, peso){
+            var imc / (altura * altura);
+            return imc;
+        }
+        
+        //Pronto, já podemos utilizar essa função, pegando o seu retorno, seja para você ou para o seu primo:
+        var peso = 75;
+        var altura = 1.72;
+        var imc = peso / (altura * altura)
+            mostra("Meu imc é " + imc);
+            mostra("Ainda estou " + (imc - 18.5) + " pontos acima do limite da magreza.");
+
+     </script>
+
+     
+
+
+
+
+
 </body>
 </html>
