@@ -7,36 +7,39 @@
     <title>Capitulo 03 - imc</title>
 </head>
 <body>
-    <h2>Pratique resolvendo problemas do seu dia a dia</h2>
+    <h2>Capítulo 3 Pratique resolvendo problemas do seu dia a dia</h2>
      
-    <!--Ainda não foi definido nenhuma variável para os dados.-->
-    <var>
-        imc = peso / (altura * altura) 
-    </var> 
+    <!--3.1 Como está seu peso? Saudável?
+    Para calcular o quadrado da altura basta multiplicarmos esse valor por ele mesmo,
+    e depois utilizarmos para dividir o peso. 
+    Ainda não foi definido nenhuma variável para os dados.-->
+    <var> imc = peso / (altura * altura); <br>
       
     <!-- Aqui definimos as varáveis para os dados.-->
-    <var> peso = 75;
-    <var> altura = 1.72;
-    <var> imc = peso / (altura * altura)
-     mostra("Meu IMC é:" + imc);   
+    <var> peso = 75;<br>
+    <var> altura = 1.72;<br>
+    <var> imc = peso / (altura * altura)<br>
+     mostra ("Meu IMC é:" + imc); <br>  
      
-     <!--Agora precisarmos calcular o IMC do primo.-->
-    <var> pesoDoPrimo = 83;
-    <var> alturaDoPrimo = 1.76;
+     <!--3.2 Utilize uma função para calcular o IMCde cada
+    amigo. Agora precisarmos calcular o IMC do primo.-->
+    <var> pesoDoPrimo = 83;<br>
+    <var> alturaDoPrimo = 1.76;<br>
     <var> imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo)
-     mostra("O IMC do primo é:" + imc); 
+     mostra ("O IMC do primo é:" + imc);<br> 
      
      <!--Vamos criar uma função que seja responsável por calcular o IMC. Assim como a nossa função mostra, essa 
     precisará receber parâmetros para poder calcular seu resultado.
     Serão dois parâmetros, peso e altura, que também declararemos dentro dos parênteses, usando a vírgula como separadora:-->
      <var>
-        calcularIMC = funcion(altura,peso){
-            var imc = / (altura * altura)
-            mostra ("IMC calculado é" + imc)
+        calcularIMC = funcion(altura,peso){<br>
+            var imc = / (altura * altura)<br>
+            mostra ("IMC calculado é" + imc)<br>
         };
      </var>
 
-     <!--Vamos revisar como deve estar o código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulaLinha:-->
+     <!--3.3 Revise o código: calculando o IMC.
+    Vamos revisar como deve estar o código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulanLinha:-->
      <script>
         var pulaLinha = function(){
             document.write("<br>");
@@ -44,7 +47,7 @@
 
         var mostra = function(frase){
             document.write(frase);
-            pilaLinha();
+            pulaLinha();
         };
 
         //Agora teremos nossa função que, dados altura e peso, calcula o imc e o retorna:
@@ -62,7 +65,21 @@
 
      </script>
 
-     
+     <h3>Vamos modificar um pouco nosso código, praticando com exercícios.</h3>
+     <!--1) Adicione uma linha de código para dizer o quão distante você está da obesidade
+     severa, que é o índice de 35.-->
+
+     <!--2) Há uma forma mais curta de escrever essas duas linhas:-->
+
+     <!--3) Você se lembra do Math.round? Ele também é uma função, que todos os navegadores já possuem definida.
+     E ela é uma função que retorna um valor, por isso podemos fazer:-->
+
+     mostra("Meu imc é " + Math.round(imc));
+     var imc = Math.round(calculaIMC(altura, peso));
+
+     <h3>3.4 Trabalhe com dados capturados: pergunte a altura e peso do usuário</h3>
+
+
 
 
 
