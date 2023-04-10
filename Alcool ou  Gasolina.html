@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,31 +10,31 @@
     
     <h2>Alcool ou Gasolina</h2>
 
-    <h3>Gasolina</h3>
+    <h3>Consumo com Gasolina</h3>
     <p>Você abasteceu 40 litros de gasolina e rodou 480Kilometros.
         O Consumo de Gasolina é d e: 12Km/l de combustivél.
         O valor do KM rodado com gasolina é de: 0.24 Reais
     </p>
 
-    <h3>Àlcool</h3>
+    <h3>Consumo com Àlcool</h3>
     <p>Você abasteceu 40 litros de àlcool e rodou 300Kilometros.
         O Consumo de Gasolina é d e: 7.5Km/l de combustivél.
         O valor do KM rodado com gasolina é de: 0.32 Reais
     </p>
     
-    <h3>Conta</h3>
+    <h3>Resultado da Conta</h3>
     
 
     <script>
-        //Declarar variáveis
+        //Aqui eu crio as variaveis. Declarar variáveis
         var tanque = 40
-        var caminhoComGasolina = 480
-        var caminhoComAlcool = 300
-        var consumoComGAsolina = (caminhoComGasolina/tanque)
-        var consumoComAlcool = (caminhoComAlcool/tanque)
+        var distanciaGasolina = 480
+        var distanciaAlcool = 300
+        var consumoGasolina = (distanciaGasolina/tanque)
+        var consumoAlcool = (distanciaAlcool/tanque)
 
-        document.write("Consumo médio com gasoline é de " + Math.round(consumoComGAsolina) + "km/L.<br><br>")
-        document.write("Consumo médio com álcool é de " + Math.round(consumoComAlcool) + "Km/L.")
+        document.write("Consumo médio com gasoline é de " + Math.round(consumoGasolina) + "km/L.<br>")
+        document.write("Consumo médio com álcool é de " + Math.round(consumoAlcool) + "Km/L.")
 
     </script>
 </body>
