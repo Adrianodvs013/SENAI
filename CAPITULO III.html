@@ -7,33 +7,38 @@
     <title> CAPITULO III </title>
 </head>
 <body>
-    <h3>Capítulo 3 Pratique resolvendo problemas do seu dia a dia</h3>
+    <h3>Capítulo 3 - Pratique resolvendo problemas do seu dia a dia.</h3>
 
-    <script>
+    <script> 
+
+     //3.3 Revise o código: calculando o IMC
+     //Vamos revisar como deve estar seu código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulaLinha:
+
     var pulaLinha = function(){
         document.write("<br><hr>")
     }
-    var mostra = function(){
-        document.write("Meu IMC é de : " + imc);
+    var mostra = function(frase){
+        document.write(frase);
         pulaLinha()
-    }     
-         
-    var peso = 75;
-    var altura = 1.72;
-    var imc = peso / (altura * altura);
-    mostra();
-      
-       
-    //3.2 Utilize uma função para calcular o IMCde cada amigo
-    var mostra = function(){
-        document.write("O IMC de meu primo é de : " + imc);
-    }
+    } 
 
-    var pesoDoPrimo = 83;
-    var alturaDoPrimo = 1.76;
-    var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo);
-    mostra();
+     //Agora teremos nossa função que, dados a altura e peso, calcula o imc e o retorna:
+     var calculaIMC = function(altura, peso) {
+        var imc = peso / (altura * altura);
+        return imc;
+    };
+     
+    var peso = 76;
+    var altura = 1.78;
+    var imc = Math.round(peso);
+          
+    mostra("Meu IMC é : " + Math.round (imc));
+    mostra("Eu ainda estou, " + Math.round (imc - 18.5) + " pontos acima do limite da magreza.")
 
+    //3.4 Trabalhe com dados capturados: pergunte a altura e peso do usuário
+
+
+    
 
     </script>
 </body>
