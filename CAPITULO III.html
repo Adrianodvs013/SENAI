@@ -11,15 +11,15 @@
 
     <script> 
 
-     //3.3 Revise o código: calculando o IMC
-     //Vamos revisar como deve estar seu código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulaLinha:
+     /*3.3 Revise o código: calculando o IMC
+     Vamos revisar como deve estar seu código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulaLinha:*/
 
     var pulaLinha = function(){
-        document.write("<br><hr>")
+        document.write("<br><hr>");
     }
     var mostra = function(frase){
         document.write(frase);
-        pulaLinha()
+        pulaLinha();
     } 
 
      //Agora teremos nossa função que, dados a altura e peso, calcula o imc e o retorna:
@@ -33,12 +33,45 @@
     var imc = Math.round(peso);
           
     mostra("Meu IMC é : " + Math.round (imc));
-    mostra("Eu ainda estou, " + Math.round (imc - 18.5) + " pontos acima do limite da magreza.")
+    mostra("Eu ainda estou, " + Math.round (imc - 18.5) + " pontos acima do limite da magreza.");
 
-    //3.4 Trabalhe com dados capturados: pergunte a altura e peso do usuário
+     /*3.4 Trabalhe com dados capturados: A função prompt retorna exatamente o que for digitado pelo usuário nessa caixa. Com o nome do usuário em mãos, podemos utilizá-lo para conversar com ele:*/
+ 
+     var nome = prompt("Bom Dia! Qual é o seu nome?");
+     document.write("Bem vindo, " + nome +"!");
+     
+     var ano = prompt(nome + ", qual é a sua data de nascimento? ");
+     document.write(nome + ", você nasceu em " + ano );
+     pulaLinha();
 
-
+    //3.5 Exercícios: pergunte os dados do usuário para calcular o IMC
+    var pulaLinha = function(){
+        document.write("<br><hr>");
+    }
+    var mostra = function(frase){
+        document.write(frase);
+    }
+    var calculaIMC = function (altura, peso){
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+    var caluculoDias = function (idade){
+        document.write(" Seu coração já bateu " + batimentos + " vezes. Haja coração!");
+    }
     
+    var altura = prompt(nome + ", qual é a sua altura?");
+    var peso = prompt("E o seu peso!"); 
+    var imc = calculaIMC(altura, peso);
+        mostra("O seu IMC é " + Math.round(imc));
+        pulaLinha()
+
+     //3.6 Descubra quantos dias seus amigos já viveram
+     var idade = prompt ("Quantos você tem?");
+     var dias = idade * 365;
+     document.write("Você ja viveu " + Math.round(dias) + " dias de vida.")
+
+     var batimentos = dias * 24 * 60 * 80;
+     calculoDias()
 
     </script>
 </body>
