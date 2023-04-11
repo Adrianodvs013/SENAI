@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IMC</title>
+    <title>Estudos</title>
 </head>
 <body>
      
     <script>
     //O alert é nossa primeira forma de comunicação com o usuário.
-     alert("Olá, mundo!")   
-        
+     alert("Olá, mundo!")  
+
+     //Há várias formas de se comunicar com o usuário através do JavaScript e uma delas é através do document.write.   
      document.write("Meu nome é Adriano Gomes. <br>" );
      document.write("Este é o meu primeiro programa. <br>");
      document.write("Minha idade é 33 anos.<hr>");
@@ -21,14 +22,55 @@
      var lais = 20;
      var total = eu + daniel + lais;
      var media = total / 3;
-     document.write ("A media de tres pessoas com idade, 33, 45 e 20 é a soma das idades dividido por eles, veja! <br>");
+     document.write ("A media das tres pessoas com idades de, 33, 45 e 20 é a soma das idades dividido por eles, veja! <br>");
      document.write("A soma dos tres é: " + total + "<br>");
-     document.write ("A media dos tres é: " + media + "<br>");
+     document.write ("A media dos e tres é: " + media + "<hr>");
+     
+     //Você está cansado de ver um número com tantas casas decimais? Você pode arrendondá-lo com o Math.round(numero). Altere seu código: ao tentar alterar para document.write ("A media dos tres é: " + mathround(media)); e tambem a numerotoFixed (media) e o programa nao executou!
+     
+     // 2.7 Pare de escrever BR tantas vezes! podemos colocar esse código dentro de uma variável. É o que chamamos de função. Vamos criar uma função que executa isso e guardá-la dentro de uma variável pulaLinha:
+         
+     var pulaLinha = function(){
+        document.write("<br>");
+     }
 
-     //Você está cansado de ver um número com tantas casas decimais? Você pode arrendondá-lo com o Math.round(numero). Altere seu código:
+     document.write ("A media de tres pessoas com idade, 33, 45 e 20 é a soma das idades dividido por eles, veja! <br>");
+     pulaLinha
+     document.write("A soma dos tres é: " + total + "<br>");
+     pulaLinha
+     document.write ("A media dos e tres é: " + media + "<hr>");
+
+     //Diferente do pulaLinha, que chamamos utilizando os parênteses sem nada dentro, o mostra será invocado com a frasedentro deles: mostra("Usando funções para melhorar o código");
+
+     var mostra = function (frase) {
+     document.write(frase + "<br>");
+     };
+
+     //Essa string que queremos mostrar vai ser passada para a função que criamos, e lá dentro será a nossa variável frase. Variáveis que são passadas para funções são frequentemente chamadas de parâmetros ou argumentos.
+
+     /*2.10 Revise o código: usando a função mostra.
+     Logo no começo, temos a definição das nossas funções. Começamos pela pulaLinha:*/
+                          
+    var mostra = function(frase) {
+    document.write(frase);
+    pulaLinha();
+    };
+    
+    var ano = 2012;
+    mostra("Eu nasci em : " + (ano - 25));
+    mostra("Adriano nasceu em : " + (ano - 26));
+    mostra("Paulo nasceu em : " + (ano - 32));
+
+    //Para logar informações com JavaScript, há a função console.log.
+    console.log("esta mensagem aparece apenas no log");
+
+    //2.13 Compartilhe seu código com seus amigos!
 
 
 
+         
+  
+    
     </script>
 
 
