@@ -4,86 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Capitulo 03 - imc</title>
+    <title>Bom dia</title>
 </head>
 <body>
-    <h2>Capítulo 3 Pratique resolvendo problemas do seu dia a dia</h2>
-     
-    <!--3.1 Como está seu peso? Saudável?
-    Para calcular o quadrado da altura basta multiplicarmos esse valor por ele mesmo,
-    e depois utilizarmos para dividir o peso. 
-    Ainda não foi definido nenhuma variável para os dados.-->
-    <var> imc = peso / (altura * altura); <br>
-      
-    <!-- Aqui definimos as varáveis para os dados.-->
-    <var> peso = 75;<br>
-    <var> altura = 1.72;<br>
-    <var> imc = peso / (altura * altura)<br>
-     mostra ("Meu IMC é:" + imc); <br>  
-     
-     <!--3.2 Utilize uma função para calcular o IMCde cada
-    amigo. Agora precisarmos calcular o IMC do primo.-->
-    <var> pesoDoPrimo = 83;<br>
-    <var> alturaDoPrimo = 1.76;<br>
-    <var> imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo)
-     mostra ("O IMC do primo é:" + imc);<br> 
-     
-     <!--Vamos criar uma função que seja responsável por calcular o IMC. Assim como a nossa função mostra, essa 
-    precisará receber parâmetros para poder calcular seu resultado.
-    Serão dois parâmetros, peso e altura, que também declararemos dentro dos parênteses, usando a vírgula como separadora:-->
-     <var>
-        calcularIMC = funcion(altura,peso){<br>
-            var imc = / (altura * altura)<br>
-            mostra ("IMC calculado é" + imc)<br>
-        };
-     </var>
-
-     <!--3.3 Revise o código: calculando o IMC.
-    Vamos revisar como deve estar o código do imc.html. Primeiramente precisamos declarar as funções que vamos utilizar. Temos tanto a função mostra quanto a pulanLinha:-->
-     <script>
+    <script>
         var pulaLinha = function(){
-            document.write("<br>");
-        };
+          document.write("<br> <hr>");
+        }
 
         var mostra = function(frase){
-            document.write(frase);
-            pulaLinha();
-        };
-
-        //Agora teremos nossa função que, dados altura e peso, calcula o imc e o retorna:
-        var calcularIMC = function(altura, peso){
-            var imc / (altura * altura);
-            return imc;
+          document.write(frase)
+          pulaLinha()
         }
+
+     var nome = prompt("Bom dia! Qual é o seu nome?")
+     document.write("Bem vindo, " + nome)
+      
+     var idade = prompt(nome + ", quantos anos você tem?");
+     document.write(" você tem " + idade + "anos.");
+
+             //Primeiro as três funções (pulaLinha, mostra e calculaIMC)
         
-        //Pronto, já podemos utilizar essa função, pegando o seu retorno, seja para você ou para o seu primo:
-        var peso = 75;
-        var altura = 1.72;
-        var imc = peso / (altura * altura)
-            mostra("Meu imc é " + imc);
-            mostra("Ainda estou " + (imc - 18.5) + " pontos acima do limite da magreza.");
+        var pulaLinha = function(){
+          document.write("<br> <hr>");
+        }
 
-     </script>
+        var mostra = function(frase){
+          document.write(frase)
+          pulaLinha()
+        }
+        //Primeiro calculando IMC de alguem          
+        var peso = prompt(" Digite seu peso: ");
+        var altura = prompt(" Digite sua altura: ");;
+        var imc = peso / (altura * altura);
+        mostra("Seu IMC é: " + imc);
 
-     <h3>Vamos modificar um pouco nosso código, praticando com exercícios.</h3>
-     <!--1) Adicione uma linha de código para dizer o quão distante você está da obesidade
-     severa, que é o índice de 35.-->
-
-     <!--2) Há uma forma mais curta de escrever essas duas linhas:-->
-
-     <!--3) Você se lembra do Math.round? Ele também é uma função, que todos os navegadores já possuem definida.
-     E ela é uma função que retorna um valor, por isso podemos fazer:-->
-
-     mostra("Meu imc é " + Math.round(imc));
-     var imc = Math.round(calculaIMC(altura, peso));
-
-     <h3>3.4 Trabalhe com dados capturados: pergunte a altura e peso do usuário</h3>
-
-
-
-
-
+        mostra("Você ainda está " + (imc - 18.5)
+        + " pontos acima do limite da magreza.");
+                        
+    </script>
+   
 
 
 </body>
 </html>
+
+
+_______________________________________________________________________________________
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+    <script>
+        //Primeiro as três funções (pulaLinha, mostra e calculaIMC)
+        
+        var pulaLinha = function(){
+          document.write("<br> <hr>");
+        }
+
+        var mostra = function(frase){
+          document.write(frase)
+          pulaLinha()
+        }
+        //Primeiro calculando IMC de alguem          
+        var peso = prompt(" Digite seu peso: ");
+        var altura = prompt(" Digite sua altura: ");;
+        var imc = peso / (altura * altura);
+        mostra("Seu IMC é: " + imc);
+
+        mostra("Você ainda está " + (imc - 18.5)
+        + " pontos acima do limite da magreza.");
+
+        //Primeiro calculando IMC de alguem  
+        var pesoDoPrimo = prompt(" Digite o peso do primo: ");
+        var alturaDoPrimo = prompt(" Digite a altura do primo: ");
+        var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo);
+        mostra("o IMC do primo é: " + imc);
+        
+        mostra("Ele ainda está " + (imcDoPrimo - 18.5)
+        + " pontos acima do limite da magreza.");
+                
+            </script>
+   
+
+
+</body>
+</html>
+
+________________________________________________________________________________
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h3, initial-scale=1.0">
+    <title>Exercicio Pula Linha</title>
+</head>
+<body>
+      
+    <h3>Teste de funções</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio asperiores nemo sunt sit facilis, ab minus? Dolore harum accusantium dolorem a at fugit alias autem quo. Consequatur dicta repellendus nam.</p>
+
+    <script> //CRIANDO E TESTANDO FUNÇÕES
+
+        var pulaLinha = function(){
+          document.write("<br> <hr>");
+        }
+
+        var mostra = function(Frase){
+          document.write(" Frase de teste!");
+        }
+
+        var ano = 1989;
+        var eu = 25
+        var adriano = 26
+        var paulo = 32
+        var total = (eu + adriano + paulo)
+        var media = (total / 3)
+
+        document.write("A média de idade é: " + media)
+        pulaLinha()
+        document.write("Eu nasci em : " + (ano - 25));
+        mostra();
+        document.write("Adriano nasceu em : " + (ano - 26));
+        pulaLinha();
+        document.write("Paulo nasceu em : " + (ano - 32));
+        mostra();
+
+        
+        document.write("Olá mundo!");
+        document.write(" Esse é meu segundo programa!");
+        console.log("Esta mensagem aparece apenas no log");
+         
+        
+
+              
+        
+
+    </script>
+
+</body>
+</html>
+
