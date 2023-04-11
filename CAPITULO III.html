@@ -7,29 +7,32 @@
     <title> CAPITULO III </title>
 </head>
 <body>
-        <h3>Capítulo 3 Pratique resolvendo problemas do seu dia a dia</h3>
+    <h3>Capítulo 3 Pratique resolvendo problemas do seu dia a dia</h3>
+
     <script>
-      //Quando temos código sendo repetido, devemos sempre pensar na possibilidade de criar uma função. Vamos criar uma que seja responsável por calcular o IMC.
-
-    var calculaIMC = function(altura, peso) {
-        var imc = peso / (altura * altura);
-        mostra("IMC calculado é " + imc);
-    };
-
+    var pulaLinha = function(){
+        document.write("<br><hr>")
+    }
     var mostra = function(){
-        document.write()
-      }
+        document.write("Meu IMC é de : " + imc);
+        pulaLinha()
+    }     
+         
+    var peso = 75;
+    var altura = 1.72;
+    var imc = peso / (altura * altura);
+    mostra();
+      
+       
+    //3.2 Utilize uma função para calcular o IMCde cada amigo
+    var mostra = function(){
+        document.write("O IMC de meu primo é de : " + imc);
+    }
 
-
-      var peso = 75;
-      var altura = 1.72;
-      var imc = peso / (altura * altura);
-      mostra("meu IMC é: " + imc);
-
-      var pesoDoPrimo = 83;
-      var alturaDoPrimo = 1.76;
-      var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo);
-      mostra("o IMC de meu primo é: " + imc);
+    var pesoDoPrimo = 83;
+    var alturaDoPrimo = 1.76;
+    var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo * alturaDoPrimo);
+    mostra();
 
 
     </script>
