@@ -21,15 +21,14 @@
          document.write("<br><hr>");
         }
 
-         //Segundo -> Perguntar ao usuário a quantidade de vitórias e empates através do prompt:
+         //Segundo -> Interagir, perguntar através do prompt a quantidade de vitórias e empates:
          var vitorias = prompt("Quantos jogos o CDC Futebol Clube venceu?");
          var empates = prompt("Quantos jogos o CDC Futebol Clube empatou?");
 
          //Terceiro -> Calcular a quantidade de pontos: onde vitória vale 3 e empate vale 1 ponto:
          var pontos = (vitorias * 3) + parseInt(empates);//Acrescentei parseInt para não concatenar.
          mostra("Nosso time tem " + pontos + " pontos!");
-         var pontos_adversario = (vitorias * 3) + parseInt(empates);
-
+         
         /* excluimos essa parte, não precisou mais dela:   
          var vitorias = 3;
          var empates = "1";/ (O 1 é string por conta do prompt, vai concatenar.)                 
