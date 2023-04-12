@@ -16,6 +16,9 @@
          function pulaLinha(){
          document.write("<br><hr>");
         }
+         function calculoPontos(vitorias, empates){//Fiquei com dividas onde usar essa função
+            return (pontos);
+         }
 
          //Segundo -> Interagir, perguntar através do prompt a quantidade de vitórias e empates:
          var vitorias = prompt("Quantos jogos o outro time venceu?");
@@ -25,13 +28,8 @@
          var pontos = (vitorias * 3) + parseInt(empates);//Acrescentei parseInt para não concatenar.
          mostra("O outro time tem " + pontos + " pontos!");
          
-        /* excluimos essa parte, não precisou mais dela:   
-         var vitorias = 3;
-         var empates = "1";/ (O 1 é string por conta do prompt, vai concatenar.)                 
-         alert(total);
-        */
-
-        /*Precisamos fazer o programa mostrar se estamos na frente:Para realizar usamos o if:*/
+         
+         /*Precisamos fazer o programa mostrar se estamos na frente:Para realizar usamos o if:*/
          if(pontos > 28){
              mostra(" Eles estão ganhando o campeonato...!  ");
          }
