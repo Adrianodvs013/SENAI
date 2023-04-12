@@ -31,7 +31,8 @@
     var peso = 76;
     var altura = 1.78;
     var imc = Math.round(peso);
-          
+        
+               
     mostra("Meu IMC é : " + Math.round (imc));
     mostra("Eu ainda estou, " + Math.round (imc - 18.5) + " pontos acima do limite da magreza.");
 
@@ -75,4 +76,49 @@
 
     </script>
 </body>
+</html>
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+  --------------------------------------------------------------------------------------------------------------------------------------------------------
+        //EXERCICIO NA SALA DE AULA 11 DE ABRIL DE 2023
+        
+        <!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sala de aula</title>
+    </head>
+    <body>
+        
+        <script>
+            // AQUI EU CRIEI AS FUNÇÕES
+            var calculaDiasDeVida = function (idade){
+            var dias = idade * 365;
+            return dias;
+            }
+
+            var calculaBatimentos = function(dias){
+            var batimentos = dias * 24 * 60 * 80; 
+            }
+
+            var idadessss = prompt("Quantos anos você tem?");
+            var osdias = calculaDiasDeVida(idadessss);
+
+            var idade = 34;
+            var dias = calculaDiasDeVida(idade);
+            var batimentos = calculaBatimentos(dias);
+                document.write("Seu coração já bateu " + batimentos + " vezes. Haja coração!");
+
+            var dias = idade * 365;
+            document.write(" você ja viveu " + dias + " dias de vida <br><hr>")
+        
+            var batimentos = dias * 24 * 60 * 80;
+            document.write("Seu coração já bateu " + batimentos + " vezes. Haja coração!");
+                
+        </script>
+        
+    </body>
 </html>
