@@ -12,29 +12,25 @@
        var pulaLinha = function ( ){
         document.write("<br><h>");
       }
-
        var mostra = function ( frase ){
         document.write( frase )
         pulaLinha( )
       }
 
-      //Primeiro calculando IMC de alguem          
+      //Receber os dados do usario pelo prompt          
       var peso = prompt(" Digite seu peso: ");
       var altura = prompt(" Digite sua altura: ");
+      var pesoDoPrimo = prompt("Digite o peso do primo: ");
+      var alturaDoPrimo = prompt( "Digite a altura do primo: ");
+
       var imc = peso / (altura  *  altura);
       mostra (" Seu IMC é: "  +  imc);
+      mostra ("Você ainda está " + (imc - 18.5) + " pontos acima do limite da magreza. ");
 
-      mostra ("Você ainda está " + (imc - 18.5)
-      + " pontos acima do limite da magreza. ");
-
-      //Primeiro calculando IMC de alguem  
-      var pesoDoPrimo = prompt("Digite o peso do primo: ");
-      var alturaDoPrimo = prompt( "Digite a altura do primo: " ) ;
       var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo  *  alturaDoPrimo);
       mostra("o IMC do primo é: " + imc);
-      
-      mostra("Ele ainda está " + (imcDoPrimo - 18.5)
-      + "pontos acima do limite da magreza.");
+      mostra("Ele ainda está " + (imcDoPrimo - 18.5) + "pontos acima do limite da magreza.");
+
               
   </script>
   </body>
