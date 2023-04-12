@@ -9,10 +9,6 @@
     <body> 
         <h4>CAPITULO 04</h4>
     <script>
-         /* if      = se
-            else    = senão
-            else if = senão se
-         */
          //Primeiro -> criar as funçoes:
          function mostra(frase){
          document.write(frase);
@@ -22,12 +18,12 @@
         }
 
          //Segundo -> Interagir, perguntar através do prompt a quantidade de vitórias e empates:
-         var vitorias = prompt("Quantos jogos o CDC Futebol Clube venceu?");
-         var empates = prompt("Quantos jogos o CDC Futebol Clube empatou?");
+         var vitorias = prompt("Quantos jogos o outro time venceu?");
+         var empates = prompt("Quantos jogos o outro time empatou?");
 
          //Terceiro -> Calcular a quantidade de pontos: onde vitória vale 3 e empate vale 1 ponto:
          var pontos = (vitorias * 3) + parseInt(empates);//Acrescentei parseInt para não concatenar.
-         mostra("Nosso time tem " + pontos + " pontos!");
+         mostra("O outro time tem " + pontos + " pontos!");
          
         /* excluimos essa parte, não precisou mais dela:   
          var vitorias = 3;
@@ -37,10 +33,10 @@
 
         /*Precisamos fazer o programa mostrar se estamos na frente:Para realizar usamos o if:*/
          if(pontos > 28){
-             mostra(" Estamos ganhando o campeonato...!  ");
+             mostra(" Eles estão ganhando o campeonato...!  ");
          }
          else{
-             mostra(" Estamos perdendo o campeonato...! ");
+             mostra(" Eles estão perdendo o campeonato...! ");
          }
             
 
