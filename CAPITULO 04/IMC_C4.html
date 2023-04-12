@@ -10,7 +10,7 @@
         <script>
          //Primeiro as três funções (pulaLinha, mostra e calculaIMC)
         var pulaLinha = function ( ){
-          document.write("<br><h>");
+          document.write("<br><hr>");
         }
         var mostra = function ( frase ){
           document.write( frase )
@@ -20,12 +20,14 @@
          //Receber os dados do usario pelo prompt          
         var peso = prompt(" Digite seu peso: ");
         var altura = prompt(" Digite sua altura: ");
-        var pesoDoPrimo = prompt("Digite o peso do primo: ");
-        var alturaDoPrimo = prompt( "Digite a altura do primo: ");
-  
+
+        var pesoDoPrimo = prompt(" Agora, digite o peso do seu primo: ");
+        var alturaDoPrimo = prompt( " Também, digite a altura do seu primo: ");
+
+         //Fazer o calculo e mostrar o resultado
         var imc = peso / (altura  *  altura);
-        mostra (" Seu IMC é: "  +  imc);
-        mostra ("Você ainda está " + (imc - 18.5) + " pontos acima do limite da magreza. ");
+        mostra(" Seu IMC é: "  +  imc);
+        mostra("Você ainda está " + (imc - 18.5) + " pontos acima do limite da magreza. ");
   
         var imcDoPrimo = pesoDoPrimo / (alturaDoPrimo  *  alturaDoPrimo);
         mostra("o IMC do primo é: " + imc);
