@@ -28,6 +28,7 @@
          //Terceiro -> Calcular a quantidade de pontos: onde vitória vale 3 e empate vale 1 ponto:
          var pontos = (vitorias * 3) + parseInt(empates);//Acrescentei parseInt para não concatenar.
          mostra("Nosso time tem " + pontos + " pontos!");
+         var pontos_adversario = (vitorias * 3) + parseInt(empates);
 
         /* excluimos essa parte, não precisou mais dela:   
          var vitorias = 3;
@@ -37,10 +38,12 @@
 
         /*Precisamos fazer o programa mostrar se estamos na frente:Para realizar usamos o if:*/
          if(pontos > 28){
-             mostra(" Estamos na frente galera!!! Ihuuu...!  ");
+             mostra(" Estamos ganhando o campeonato...!  ");
          }
-         else
-            mostra (" Pelas tranças do rei careca, estamos perdendo o capeonato...! ");
+         else{
+             mostra(" Estamos perdendo o campeonato...! ");
+         }
+            
 
     </script>        
     </body>  
