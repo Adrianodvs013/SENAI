@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pontos Futebol</title>
+</head>
+    <body> 
+        <h4>CAPITULO 04</h4>
+    <script>
+         /* if      = se
+            else    = senão
+            else if = senão se
+         */
+         //Primeiro -> criar as funçoes:
+         function mostra(frase){
+         document.write(frase);
+        } 
+         function pulaLinha(){
+         document.write("<br><hr>");
+        }
+
+         //Segundo -> Perguntar ao usuário a quantidade de vitórias e empates através do prompt:
+         var vitorias = prompt("Quantos jogos o CDC Futebol Clube venceu?");
+         var empates = prompt("Quantos jogos o CDC Futebol Clube empatou?");
+
+         //Terceiro -> Calcular a quantidade de pontos: onde vitória vale 3 e empate vale 1 ponto:
+         var pontos = (vitorias * 3) + parseInt(empates);//Acrescentei parseInt para não concatenar.
+         mostra("Nosso time tem " + pontos + " pontos!");
+
+        /* excluimos essa parte, não precisou mais dela:   
+         var vitorias = 3;
+         var empates = "1";/ (O 1 é string por conta do prompt, vai concatenar.)                 
+         alert(total);
+        */
+
+        /*Precisamos fazer o programa mostrar se estamos na frente:Para realizar usamos o if:*/
+         if(pontos > 28){
+             mostra(" Tamo na frente... RECEBA! Siiimmmm... O melhor do Mundo!  ");
+         }
+         else
+            mostra (" Po caraio, tamo na mal e a culpa é do Junim que não passa a bola! _|_ ... ");
+
+    </script>        
+    </body>  
+</html>
