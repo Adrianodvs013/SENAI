@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CAPITULO 04</title>
+</head>
+<body>
+    <h3>Capitulo 4 - Jogo: adivinhe o nuemro que estou pensando.</h3>
+    <script>
+        function mostra(frase){
+           document.write(frase);
+        } 
+        
+        var numeroPensado = Math.round(Math.random() * 100);
+                
+        var chute = prompt("Já pensei. Qual você acha que é?");
+        if(chute == numeroPensado){
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado + "!"); 
+        } else{
+            mostra("Você errou! Eu tinha pensado no " + numeroPensado + "!");
+        }
+        
+        if(chute < numeroPensado){
+            mostra(" O número que eu pensei é maior! "); 
+        }
+                
+        if(chute > numeroPensado){
+            mostra(" O número que eu pensei é menor ! "); 
+        }
+
+        //else {
+            //mostra(" Você errou! Eu tinha pensado no " + numeroPensado);
+        //}  
+          
+          
+    </script>
+</body>
+</html>
