@@ -26,11 +26,20 @@
 
          //Fazer o calculo e mostrar o resultado
         var imc = peso / (altura  *  altura);
-        mostra("O seu IMC é: "  +  imc);
+        mostra("O seu IMC é: "  + imc);
         mostra(" Você ainda está " + (imc - 18.5) + " pontos acima do limite da magreza. ");
-  
         
-                
+        if(imc < 18) {
+          mostra("Você está muito abaixo, Magro. ");
+        }
+        if(imc > 35) {
+          mostra("Você está muito acima, gordo. ");
+        }
+
+        if(imc > 18.5 && imc < 35) {
+           mostra("OK! Seu IMC está entre os dois limites.");
+        }         
+                        
       </script>
 </body>
 </html>
