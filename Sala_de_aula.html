@@ -1,58 +1,40 @@
-<title>Sala de Aula</title>
-<p>Meu primeiro teste!
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CAPITULO 04 </title>
+</head>
+<body>
+    <h3>Capítulo 4 - Jogo: adivinhe o número que estou pensando 12 / 04 / 2023.</h3>
 
-Seria isso um programa?
-Não consigo fazer nada além de mostrar conteudo fico?
+    <script> 
+        function mostra(frase){
+           document.write(frase);
+        } 
+        
+        var numeroPensado = Math.round(Math.random() * 100);
+                
+        var chute = prompt("Já pensei. Qual você acha que é?");
+        if(chute == numeroPensado){
+            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado + "!"); 
+        } else{
+            mostra("Você errou! Eu tinha pensado no " + numeroPensado + "!");
+        }
+        
+        if(chute < numeroPensado){
+            mostra(" O número que eu pensei é maior! "); 
+        }
+                
+        if(chute > numeroPensado){
+            mostra(" O número que eu pensei é menor ! "); 
+        }
 
-Conheça o site da nossa Editora: Clique aqui para conferir!</p>
-
-
-<script>
-    alert("Podemos fazer mais com JavaScript!");
-</script>
-
- <button onclick="resultado("Deu certo!")">Clique aqui!</button>
- <br>
-
-<script>  //2.1 Dê olá ao mundo de outras formas
-    alert("Olá, mundo!");
-    alert("Este é o meu segundo programa!");
-</script>
-
-<script>  //2.2 Trabalhe com números
-    alert("Minha idade é:");
-    alert("33 anos");
-    alert("33" + "33"); //concatenação
-    alert(33 + 33);    // soma
-    alert("Eu nasci em:");
-    alert("1989 - 12");
-    alert("A soma das nossas idades é:");
-    alert(28 + 30 + 33);
-    alert("A média das nossas idades é:");
-    alert((28 + 30 + 33) / 3);
-    alertA("média das nossas idades é: + ((28 + 30 + 33) / 3)");
-</script>
-
-<script>//2.3 Revisando o seu código: trabalhando com números
-    alert("Minha idade é:" + 33);
-    alert("A soma das nossas odades é:");
-    alert(28 + 30 + 33);
-    alertA("média das nossas idades é: + ((28 + 30 + 33) / 3)");
-</script>
-
-<div id="demo"></div>
-
-<script>
-    alert("Inicio do curso: 03/04/2013")
-    var data = new Date(25/12);
-
-    function resultado(){
-        document.getElementById("deso").innerHTML = data;
-    }
-</script>
- 
-<div id="demo"></div><div>
- <script>
-    var data = 1989;
-    alert("Data de Nascimento:" + data);
- </script>
+        //else {
+            //mostra(" Você errou! Eu tinha pensado no " + numeroPensado);
+        //}  
+          
+    </script>
+</body>
+</html>
