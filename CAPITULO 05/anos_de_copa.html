@@ -9,13 +9,22 @@
 <body>
     <script>
 
+     //Primeiro -> criar as funçoes:
+     function mostra(frase){
+        document.write(frase + "<br><hr>");
+     } 
+    
+     //Variaveis:
      var anoDeCopa = 1930;
 
+     //Calculos e funções:
      while(anoDeCopa <= 2014){
-        alert(anoDeCopa + " Tem Copa! ");
+        mostra(anoDeCopa + " Tem Copa! ");
         anoDeCopa = anoDeCopa + 4;
      }      
- 
+      
+     //Resultado, print na tela, resposta...:
+     mostra("Ufa! Quantos eventos futebolisticos ja tivemos e ainda teremos ainda depois de 2014.");
             
     </script>
 </body>
