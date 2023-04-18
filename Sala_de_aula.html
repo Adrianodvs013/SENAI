@@ -4,36 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> CAPITULO 04 </title>
+    <title> Media de Idade </title>
 </head>
 <body>
     <h3>Capítulo 4 - Jogo: adivinhe o número que estou pensando.</h3>
 
     <script> 
-        function mostra(frase){
-           document.write(frase);
-        } 
-        
-        var numeroPensado = Math.round(Math.random() * 100);
-                
-        var chute = prompt("Já pensei. Qual você acha que é?");
-        if(chute == numeroPensado){
-            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado + "!"); 
-        } else{
-            mostra("Você errou! Eu tinha pensado no " + numeroPensado + "!");
-        }
-        
-        if(chute < numeroPensado){
-            mostra(" O número que eu pensei é maior! "); 
-        }
-                
-        if(chute > numeroPensado){
-            mostra(" O número que eu pensei é menor ! "); 
-        }
+        var mostra = function(frase) {
+            document.write(frase + "<br>");
+         }
 
-        //else {
-            //mostra(" Você errou! Eu tinha pensado no " + numeroPensado);
-        //}  
+            
+         var totalDeFamiliares = prompt("Quantos familiares são?");
+         var somaDeIdades = 0;
+
+         var numero = 1;
+            while(numero <= totalDeFamiliares) {
+                var idade = parseInt(prompt(" Qual é a idade? "));
+                 somaDeIdades = somaDeIdades + idade;
+                 numero++;              
+        }
+         var media = somaDeIdades / totalDeFamiliares;
+             alert("A média é: " + media); 
+                    
           
     </script>
 </body>
