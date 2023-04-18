@@ -35,20 +35,18 @@
     function mostra(frese){
         document.write(frase + "<hr>")
     }
-
     var numeroPensado = 10;
-
      var numeroDaTentativa = 1
       while(numeroDaTentativa <= 3) {
              var chute = prompt("Já pensei. Qual você acha que é?");
-
              if(chute == numeroPensado) {
                 alert("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+                break;
             } else {
                 alert("Você errou!");
             }
              numeroDaTentativa++;
-    }                       
-    </script>        
+         }         
+     </script>        
 </body>
 </html>
