@@ -7,7 +7,7 @@
     <title> Media de Idade </title>
 </head>
 <body>
-    <h3>Capítulo 4 - Jogo: adivinhe o número que estou pensando.</h3>
+    <h3>Capítulo 5 - Media_De_Idade_Familiar.</h3>
 
     <script> 
         var mostra = function(frase) {
@@ -25,9 +25,30 @@
                  numero++;              
         }
          var media = somaDeIdades / totalDeFamiliares;
-             alert("A média é: " + media); 
-                    
+             alert("A média é: " + media);              
           
     </script>
+    
+     <h3>Capítulo 5 - jogo_adivinha_com_tentativas</h3>
+
+    <script> 
+    function mostra(frese){
+        document.write(frase + "<hr>")
+    }
+
+    var numeroPensado = 10;
+
+     var numeroDaTentativa = 1
+      while(numeroDaTentativa <= 3) {
+             var chute = prompt("Já pensei. Qual você acha que é?");
+
+             if(chute == numeroPensado) {
+                alert("Uau! Você acertou, pois eu pensei no " + numeroPensado);
+            } else {
+                alert("Você errou!");
+            }
+             numeroDaTentativa++;
+    }                       
+    </script>        
 </body>
 </html>
