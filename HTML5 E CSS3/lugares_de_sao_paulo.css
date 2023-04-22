@@ -1,6 +1,6 @@
 
 body {
-    background: #FFF1D6 url(images/noise.png);
+    background: #f8dea9 url(images/noise.png);
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
     sans-serif;
     line-height: 1.6;
@@ -12,15 +12,24 @@ body {
 } 
 
 .place {
-    border-color: #b6a5a5 #999 #999 #CCC;
-    background-color: #b0cef7;
+    background-color: #dadee2;
     border: 1px solid #CCC;
+    border-color: #3f3e3e #555454 #2b2929 #222121;
     margin-bottom: 20px;
     padding: 10px;
 }
 
 .place h2 {
-    border-bottom: 1px dashed #7E9F19;
+    border-bottom: 1px dashed #c0392f;
     margin: 0;
+}
 
-    
+.place a {
+    color: #925005;
+    font-weight: bold;
+}
+
+h1 a:hover {
+    background-color: #7e9f19;
+    text-decoration: none;
+    }
