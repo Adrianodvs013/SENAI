@@ -1,0 +1,27 @@
+
+body {
+    background: #FFF1D6 url(images/noise.png);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+    sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+} 
+
+.place {
+    border-color: #b6a5a5 #999 #999 #CCC;
+    background-color: #b0cef7;
+    border: 1px solid #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.place h2 {
+    border-bottom: 1px dashed #7E9F19;
+    margin: 0;
+
+ 
+    
