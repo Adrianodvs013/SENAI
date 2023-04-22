@@ -32,4 +32,45 @@ body {
 h1 a:hover {
     background-color: #7e9f19;
     text-decoration: none;
-    }
+}
+
+.place img {
+    border: 1px solid #7E9F19;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidenote h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sidenote ol {
+    font-size: 12px;
+}
+
+.sidenote {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    float: right;
+    padding: 10px;
+    width: 260px;
+}
+    
+
+
+
+
+
+
+    
