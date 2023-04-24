@@ -12,8 +12,8 @@ body {
 } 
 
 .place {
-    background-color: #eaeaec2c;
-    border: 1px solid #628af7;
+    background-color: #4bcbd47a;
+    border: 1px solid #bdc0c9;
     border-color: #8bcdf7 #9ab1f7 #82a2fa #4b92d4;
     margin-bottom: 20px;
     padding: 10px;
@@ -57,18 +57,9 @@ h1 a:hover {
     text-align: center;
 }
 
-.sidenote h3 {
-    font-size: 20px;
-    margin-top: 0;
-}
-
-.sidenote ol {
-    font-size: 12px;
-}
-
 .sidenote {
     background-color: #FFFBE4;
-    border: 1px solid #473904;
+    border: 1px solid #C9BC8F;
     float: right;
     padding: 10px;
     width: 260px;
@@ -76,8 +67,9 @@ h1 a:hover {
     
 .places {
     float: right;
-    width: 500px;
+    width: 0px;
 }
+    
 
 
 
