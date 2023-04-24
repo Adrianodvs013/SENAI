@@ -41,6 +41,48 @@ h1 a:hover {
 
 
 
+body {
+    background-image: linear-gradient(to top , #ffffff, #44bbf1);
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+} 
+
+.place {
+    background-color: #eaeaec2c;
+    border: 1px solid #628af7;
+    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.place a {
+    color: #cc5d12;
+    font-weight: bold;
+}
+
+.place h2 {
+    border-bottom: 1px dashed #3939f0e5;
+    margin: 0;
+}
+
+h1 a {
+    color: #152635;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #fdfdfd52;
+    text-decoration: none;
+}
+
+
+
 .place img {
     border: 5px solid #0774f146;
     float: left;
@@ -79,9 +121,3 @@ h1 a:hover {
     width: 500px;
 }
 
-
-
-
-
-
-    
