@@ -1,40 +1,183 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Media de Idade </title>
+    <link rel="stylesheet" href="saopaulo.css">
+    <title>O que eu mais gosto em São Paulo</title>
+    <link rel="icon" href="imagens/mapa-3d-isometrico-de-sao-paulo-com-bandeira_97886-18963.avif">
+
 </head>
+
 <body>
-    <h3>Capítulo 5 - Media_De_Idade_Familiar.</h3>
+    <div class="places">
+        <div class='container'> <!-- INICIO DA DIV -TODPO O CORPO DA PAGINA VEM AQUI... -->
 
-    <script> 
-        function mostra(frase){
-           document.write(frase);
-        } 
-        
-        var numeroPensado = Math.round(Math.random() * 100);
-                
-        var chute = prompt("Já pensei. Qual você acha que é?");
-        if(chute == numeroPensado){
-            mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado + "!"); 
-        } else{
-            mostra("Você errou! Eu tinha pensado no " + numeroPensado + "!");
-        }
-        
-        if(chute < numeroPensado){
-            mostra(" O número que eu pensei é maior! "); 
-        }
-                
-        if(chute > numeroPensado){
-            mostra(" O número que eu pensei é menor ! "); 
-        }
+            <h1><a href=''><u>O que eu mais gosto em São Paulo!</u> </a></h1>
 
-        //else {
-            //mostra(" Você errou! Eu tinha pensado no " + numeroPensado);jvgdigjvdishj
-        //}  
-          
-    </script>
+            <div class="place">
+                <h2>Passear na Avenida Paulista!</h2>
+                <img src='imagens/avplst.avif'
+                    alt="O céu da avenida Paulista, foto por http://www.flickr.com/photos/jairo_abud">
+                <p>
+                    Um dos principais centros financeiros da cidade, a avenida Paulista
+                    também possui diversas opções de entretenimento. Endereço do Museu
+                    de Arte de São Paulo, <em>MASP</em>, do Teatro Gazeta e muitos outros,
+                    a região é de fácil acesso graças as diversas linhas de ônibus que
+                    cruzam a avenida e a linha de metrô que passa por baixo dela.
+                </p>
+                <p>A Avenida Paulista sempre é assunto. O que será que estão falando a respeito no
+                    <a href='https://twitter.com/#!/search/Avenida Paulista' target='_blank'>Twitter</a>?
+                </p>
+                <div class='clear'></div>
+            </div>
+
+            <div class="place">
+                <h2>Os bares da Vila Madalena</h2>
+                <p>
+                    <img src='imagens/bares-vila-madalena.png'
+                        alt="A varanda do Armazém Piola, foto por Fernando Moraes">
+                    Depois de um dia de trabalho, nada melhor do que um bom chopp, um
+                    petisco e uma conversa em uma mesa de bar. Opções de sobra na região
+                    das ruas Aspicuelta, Fradique Coutinho e Wisard.
+                </p>
+                <p>
+                    Veja quais os melhores bares e restaurantes da região no
+                    <a href='http://vejasp.abril.com.br/busca?chn=bares&qu=
+            &nbh=Pinheiros%20/%20Vila%20Madalena' target='_blank'>
+                        Guia da VEJA São Paulo.
+                    </a>
+                </p>
+                <div class='clear'></div>
+            </div>
+
+            <div class="place">
+                <h2>O Parque do Ibirapuera</h2>
+                <p>
+                    <img src='imagens/parqueibirapuera.jpg'
+                        alt="O Parque do Ibirapuera,por http://www.flickr.com/photos/soldon/">
+                    Um dos cartões postais da cidade, o parque dispõe de mais de 1,5 km{^2}
+                    de área verde, lagos artificiais e pistas de cooper e ciclismo. E se
+                    isso não fosse o suficiente, o parque costuma ser palco de diversos
+                    eventos culturais ao longo do ano.
+                </p>
+                <p>
+                    Veja no <a href='http://goo.gl/maps/HoH8' target='_blank'>mapa</a> como chegar ao parque.
+                </p>
+
+                <div class='footer clear'>
+                </div>
+                <div class='clear'></div>
+            </div>
+
+        </div>
+
+    </div><!-- FIM DA DIV -TODPO O CORPO DA PAGINA ESTA AQUI... -->
+    <div class='sidenote'>
+        <h3>E existem muitos outros lugares interessantes na cidade...</h3>
+        <ol>
+            <li>O Mercado Municipal.</li>
+            <li>A Sala São Paulo.</li>
+            <li>Os estádios dos principais times de futebol da cidade.</li>
+            <li>Diversos museus, como o Memorial da América Latina, Museu da
+                Língua Portuguesa e o Museu do Ipiranga.
+            </li>
+            <li>E mais!</li>
+        </ol>
+    </div>
+
+    <div class='footer clear'>
+        <p>Parte do livro "HTML5 e CSS3: Domine a web do futuro."</p>
+    </div>
 </body>
+
 </html>
+
+___________________________________________________________
+.container {
+    margin: 0 auto;
+    width: 1000px;
+} 
+
+body {
+    background-image: url(imagens/fundo-lilas.png);
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    color: #fafeff;
+    line-height: 1.6;
+}
+
+.place {
+    background-color: #5de1f30e;
+    border: 5px solid #fdfeff25;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.place h2 {
+    color: #e9e9e9;
+    border-bottom: 3px dashed #fcd93e42;
+    margin: 0;
+}
+
+.place a {
+    color: #ff954e;
+    font-weight: bold;
+}
+
+.place a:hover {
+    background-color: #f7e59825;
+    text-decoration: none;
+}
+
+h1 a {
+    color: #f8c726fd;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #f7e59825;
+    text-decoration: none;
+}
+
+.place img {
+    border: 1px solid #8e01b1;
+    float: left;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+    width: 200px;
+    height: 150px;
+}
+
+.clear {
+    clear: both;
+}
+
+.footer {
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidenote {
+    background-color: #59b7f725;  
+    border: 1px solid rgb(196, 196, 196);
+    padding: 10px;
+    float: right;
+    width: 260px;
+}
+
+.sidenote h3 {
+    font-size: 20px;
+    margin-top: 0;
+}
+
+.sidenote ol {
+    font-size: 12px;
+}
+   
+.places {
+    float: left;
+    width: 660px;
+}
