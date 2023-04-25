@@ -21,7 +21,7 @@ body {
 
 .places {
     float: left;
-    width: 660px;
+    width: 700px;
 }
 
 .place h2 {
@@ -39,7 +39,8 @@ body {
     float: left;
     margin: 10px 10px 0 0;
     padding: 2px;
-    width: 300px;
+    width: 250px;
+    height: 180px;
 }
 
 .clear {
@@ -67,7 +68,7 @@ h1 a:hover {
     border: 1px solid #C9BC8F;
     float: right;
     padding: 10px;
-    width: 260px;
+    width:180px;
 }
 
 
