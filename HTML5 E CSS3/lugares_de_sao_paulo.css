@@ -1,53 +1,93 @@
-.container {
-    margin: 0 auto;
-    width: 960px;
-}
 
 body {
-    background-image: url(imagens/fundo\ laranja.avif);
+    background-image: linear-gradient(to top , #ffffff, #44bbf1);
     margin: 0;
     font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    color: #ffffff;
     line-height: 1.6;
 }
 
+.container {
+    margin: 0 auto;
+    width: 960px;
+} 
+
 .place {
-    background-color: #5de2f33a;
-    border: 5px solid #fdfeff7e;
-    margin-bottom: 10px;
+    background-color: #eaeaec2c;
+    border: 1px solid #628af7;
+    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
-.place h2 {
-    color: #fffafa;
-    border-bottom: 3px dashed #fcd93e42;
-    margin: 0;
-}
-
 .place a {
-    color: #ff954e;
+    color: #cc5d12;
     font-weight: bold;
 }
 
-
+.place h2 {
+    border-bottom: 1px dashed #3939f0e5;
+    margin: 0;
+}
 
 h1 a {
-    color: #fddf7cfd;
+    color: #152635;
     text-decoration: none;
 }
 
 h1 a:hover {
-    background-color: #f7e59825;
+    background-color: #fdfdfd52;
     text-decoration: none;
 }
 
+
+
+body {
+    background-image: linear-gradient(to top , #ffffff, #44bbf1);
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+} 
+
+.place {
+    background-color: #eaeaec2c;
+    border: 1px solid #628af7;
+    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.place a {
+    color: #cc5d12;
+    font-weight: bold;
+}
+
+.place h2 {
+    border-bottom: 1px dashed #3939f0e5;
+    margin: 0;
+}
+
+h1 a {
+    color: #152635;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #fdfdfd52;
+    text-decoration: none;
+}
+
+
+
 .place img {
-    border: 1px solid #e6f14a;
+    border: 5px solid #0774f146;
     float: left;
-    margin: 10px 10px 0 0;
+    margin: 10px 10px  0;
     padding: 2px;
-    width: 200px;
-    height: 150px;
 }
 
 .clear {
@@ -59,14 +99,6 @@ h1 a:hover {
     text-align: center;
 }
 
-.sidenote {
-    background-color: #59b7f725;
-    border: 1px solid rgb(196, 196, 196);
-    padding: 10px;
-    float: right;
-    width: 100px;
-}
-
 .sidenote h3 {
     font-size: 20px;
     margin-top: 0;
@@ -76,7 +108,16 @@ h1 a:hover {
     font-size: 12px;
 }
 
-.places {
-    float: left;
-    width: 100px;
+.sidenote {
+    background-color: #FFFBE4;
+    border: 1px solid #473904;
+    float: right;
+    padding: 10px;
+    width: 260px;
 }
+    
+.places {
+    float: right;
+    width: 500px;
+}
+
