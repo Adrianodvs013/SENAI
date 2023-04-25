@@ -1,45 +1,5 @@
-body {
-    background-image: linear-gradient(to top , #ffffff, #44bbf1);
-    margin: 0;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    line-height: 1.6;
-}
-
+/*Configurar e centralizar esta div na página:*/
 .container {
     margin: 0 auto;
     width: 960px;
-} 
-
-.article {
-    background-color: #eaeaec2c;
-    border: 1px solid #628af7;
-    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
-    margin-bottom: 20px;
-    padding: 10px;
 }
-
-.article a {
-    color: #cc5d12;
-    font-weight: bold;
-}
-
-.article h2 {
-    border-bottom: 1px dashed #3939f0e5;
-    margin: 0;
-}
-
-aside {
-    background-color: #FFFBE4;
-    border: 1px solid #C9BC8F;
-    float: right;
-    padding: 10px;
-    width: 260px;
-    }
-    aside h3 {
-    font-size: 14px;
-    margin-top: 0;
-    }
-    aside ol {
-    font-size: 12px;
-    }
-    
