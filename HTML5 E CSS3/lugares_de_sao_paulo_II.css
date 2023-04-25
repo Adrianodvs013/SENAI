@@ -3,3 +3,9 @@
     margin: 0 auto;
     width: 960px;
 }
+
+body {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+        sans-serif;
+    line-height: 1.6;
+}
