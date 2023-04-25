@@ -1,81 +1,82 @@
-
-body {
-    background-image: url(imagens/fundo\ laranja.avif)
-    margin: 0;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    line-height: 1.6;
-}
-
+/*Configurar e centralizar esta div na página:*/
 .container {
     margin: 0 auto;
     width: 960px;
-} 
+}
+
+body {
+    background: #FFF1D6 url(images/noise.png);
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana,
+        sans-serif;
+    line-height: 1.6;
+}
 
 .place {
-    background-color: #eaeaec2c;
-    border: 1px solid #628af7;
-    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-color: #CCC #999 #999 #CCC;
     margin-bottom: 20px;
     padding: 10px;
 }
 
-.place a {
-    color: #cc5d12;
-    font-weight: bold;
+.places {
+    float: left;
+    width: 700px;
 }
 
 .place h2 {
-    border-bottom: 1px dashed #3939f0e5;
+    border-bottom: 1px dashed #7E9F19;
     margin: 0;
 }
 
-h1 a {
-    color: #152635;
-    text-decoration: none;
+.place a {
+    color: #2C88A7;
+    font-weight: bold;
 }
-
-h1 a:hover {
-    background-color: #fdfdfd52;
-    text-decoration: none;
-}
-
-
 
 .place img {
-    border: 5px solid #0774f146;
+    border: 1px solid #7E9F19;
     float: left;
-    margin: 10px 10px  0;
+    margin: 10px 10px 0 0;
     padding: 2px;
+    width: 250px;
+    height: 180px;
 }
 
 .clear {
     clear: both;
 }
 
+
+h1 a {
+    color: #7E9F19;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    background-color: #7E9F19;
+    color: #FFF;
+}
+
 .footer {
-    font-size: 20px;
+    font-size: 12px;
     text-align: center;
 }
 
+.sidenote {
+    background-color: #FFFBE4;
+    border: 1px solid #C9BC8F;
+    float: right;
+    padding: 10px;
+    width:180px;
+}
+
+
 .sidenote h3 {
-    font-size: 20px;
+    font-size: 14px;
     margin-top: 0;
 }
 
 .sidenote ol {
     font-size: 12px;
 }
-
-.sidenote {
-    background-color: #FFFBE4;
-    border: 1px solid #473904;
-    float: right;
-    padding: 10px;
-    width: 260px;
-}
-    
-.places {
-    float: right;
-    width: 500px;
-}
-
