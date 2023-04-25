@@ -1,93 +1,56 @@
-
-body {
-    background-image: linear-gradient(to top , #ffffff, #44bbf1);
-    margin: 0;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    line-height: 1.6;
-}
-
 .container {
     margin: 0 auto;
     width: 960px;
-} 
+}
+
+body {
+    background-image: url(imagens/fundo\ laranja.avif);
+    margin: 0;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
+    color: #ffffff;
+    line-height: 1.6;
+}
 
 .place {
-    background-color: #eaeaec2c;
-    border: 1px solid #628af7;
-    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
+    background-color: #5de2f33a;
+    border: 5px solid #fdfeff7e;
     margin-bottom: 20px;
     padding: 10px;
 }
 
-.place a {
-    color: #cc5d12;
-    font-weight: bold;
-}
-
 .place h2 {
-    border-bottom: 1px dashed #3939f0e5;
+    color: #fffafa;
+    border-bottom: 3px dashed #fcd93e42;
     margin: 0;
 }
 
+.place a {
+    color: #ff954e;
+    font-weight: bold;
+}
+
+.place a:hover {
+    background-color: #f7e59825;
+    text-decoration: none;
+}
+
 h1 a {
-    color: #152635;
+    color: #f8c726fd;
     text-decoration: none;
 }
 
 h1 a:hover {
-    background-color: #fdfdfd52;
+    background-color: #f7e59825;
     text-decoration: none;
 }
-
-
-
-body {
-    background-image: linear-gradient(to top , #ffffff, #44bbf1);
-    margin: 0;
-    font-family: "Lucida Grande", "Lucida Sans Unicode", Verdana, sans-serif;
-    line-height: 1.6;
-}
-
-.container {
-    margin: 0 auto;
-    width: 960px;
-} 
-
-.place {
-    background-color: #eaeaec2c;
-    border: 1px solid #628af7;
-    border-color: #8bcdf7 #aabffd #4f4ffc #573bf7;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-.place a {
-    color: #cc5d12;
-    font-weight: bold;
-}
-
-.place h2 {
-    border-bottom: 1px dashed #3939f0e5;
-    margin: 0;
-}
-
-h1 a {
-    color: #152635;
-    text-decoration: none;
-}
-
-h1 a:hover {
-    background-color: #fdfdfd52;
-    text-decoration: none;
-}
-
-
 
 .place img {
-    border: 5px solid #0774f146;
+    border: 1px solid #8e01b1;
     float: left;
-    margin: 10px 10px  0;
+    margin: 10px 10px 0 0;
     padding: 2px;
+    width: 200px;
+    height: 150px;
 }
 
 .clear {
@@ -99,6 +62,14 @@ h1 a:hover {
     text-align: center;
 }
 
+.sidenote {
+    background-color: #59b7f725;
+    border: 1px solid rgb(196, 196, 196);
+    padding: 10px;
+    float: right;
+    width: 260px;
+}
+
 .sidenote h3 {
     font-size: 20px;
     margin-top: 0;
@@ -108,16 +79,7 @@ h1 a:hover {
     font-size: 12px;
 }
 
-.sidenote {
-    background-color: #FFFBE4;
-    border: 1px solid #473904;
-    float: right;
-    padding: 10px;
-    width: 260px;
-}
-    
 .places {
-    float: right;
-    width: 500px;
+    float: left;
+    width: 100px;
 }
-
