@@ -11,36 +11,35 @@ body {
     line-height: 1.6;
 }
 
-.place {
+.places {
     background-color: #FFF;
-    border: 1px solid #CCC;
-    border-color: #CCC #999 #999 #CCC;
+    border: 5px solid #062294;
+    border-color: #dc0101 #cc0a0a #d00d0d #f31212;
     margin-bottom: 20px;
     padding: 10px;
-}
-
-.places {
     float: left;
-    width: 700px;
+    width: 640px;
+
 }
 
-.place h2 {
+article h2 {
     border-bottom: 1px dashed #7E9F19;
     margin: 0;
 }
 
-.place a {
+article a {
     color: #2C88A7;
     font-weight: bold;
 }
 
-.place img {
+article img {
     border: 1px solid #7E9F19;
     float: left;
     margin: 10px 10px 0 0;
     padding: 2px;
     width: 250px;
     height: 180px;
+
 }
 
 .clear {
@@ -58,25 +57,24 @@ h1 a:hover {
     color: #FFF;
 }
 
-.footer {
+footer {
     font-size: 12px;
     text-align: center;
 }
 
-.sidenote {
+aside {
     background-color: #FFFBE4;
     border: 1px solid #C9BC8F;
     float: right;
     padding: 10px;
-    width:180px;
+    width: 260px;
 }
 
-
-.sidenote h3 {
+aside h3 {
     font-size: 14px;
     margin-top: 0;
 }
 
-.sidenote ol {
+aside ol {
     font-size: 12px;
 }
